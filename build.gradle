@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'edu.pucmm.http'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+// nombre para identificar el nombre de clase main
+mainClassName = 'edu.pucmm.http.Main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile "com.sparkjava:spark-core:2.7.2"
+    compile 'org.jsoup:jsoup:1.11.3'
+}
